@@ -1,4 +1,5 @@
 import { useState } from "react/cjs/react.development"
+import NavBar from "../components/NavBar";
 
 //Next.js는 React.js를 백엔드에서 동작시켜서 페이지를 미리 랜더링함
 //그렇게 생성이된 HTML을 Next.js가 JS와 React.js가 로딩되지 않았음에도 미리 그려줌
@@ -10,6 +11,7 @@ export default function Home() {
   const [counter, setCounter] = useState(0);
   return (
     <div>
+      <NavBar />
       <h1>Hello {counter}</h1>
       <button onClick={()=> setCounter((cur)=> cur + 1)}>+</button>
     </div>
