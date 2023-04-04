@@ -12,7 +12,6 @@ export default function Home() {
   const [counter, setCounter] = useState(0);
   return (
     <div>
-      <NavBar2 />
       <h1>Hello {counter}</h1>
       <button onClick={()=> setCounter((cur)=> cur + 1)}>+</button>
     </div>
